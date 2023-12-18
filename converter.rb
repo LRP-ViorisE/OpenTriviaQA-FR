@@ -1,20 +1,20 @@
 #!/usr/bin/env ruby
 
-# format is like this
+# Le format est comme tel
 
-#  #Q The author of the novel A Portrait of the Artist as a Young Man is this writer.
-#  ^ James Joyce
-#  A T. S. Eliot
-#  B Samuel Beckett
-#  C William Faulkner
-#  D James Joyce
+#  #Q Qui est le présentateur des 12 coups de midi ?.
+#  ^ Jean-Luc Reichmann
+#  A David Pujadas
+#  B Anne-Sophie Lapix
+#  C Louis Bodin
+#  D Jean-Luc Reichmann
 
-# use converter like this:
+# utilisez le convertisseur comme suit:
 # ruby converter.rb input_file
-# this will create an input_file.json
-# you can also pass multiple files like so
+# cela créera un input_file.json
+# vous pouvez aussi convertir plusieurs fichiers:
 # ruby converter.rb input_file1 input_file2
-# or even like so
+# ou comme ceci
 # ruby converter.rb folder/*
 
 require 'json'
@@ -26,7 +26,7 @@ end
 
 ARGV.each do |file|
   if File.directory?(file)
-    puts "#{file} is a directory. Skipping."
+    puts "#{file} est un dossier. Ignoré."
     next
   end
 
