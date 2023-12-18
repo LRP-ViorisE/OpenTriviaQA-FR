@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 def txt_to_csv(path): 
   """
-  The csv Generarted will be such:
+  Le csv géneré sera comme suit:
     |Questions | Correct | A | B | C | D |
   0 |  myQ     |    X    | a | X | c | d |  
   """   
